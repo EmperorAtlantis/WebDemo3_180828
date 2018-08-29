@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html class="metro-no-touch-device">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/metro")
+    @*@RenderSection("scripts", required: true)*@
+</head>
+<body>
+    <div class="app-bar-expand-md" data-role="appbar">
+        <a></a>
+    </div>
+    <ul class="app-bar-menu">
+        <li>
+            <a>首页</a>
+        </li>
+        <li><a></a></li>
+    </ul>
+
+        
+        @RenderBody()
+
+    
+</body>
+</html>
