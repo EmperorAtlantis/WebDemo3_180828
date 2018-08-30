@@ -12,19 +12,55 @@
     @*@RenderSection("scripts", required: true)*@
 </head>
 <body>
-    <div class="app-bar-expand-md" data-role="appbar">
-        <a></a>
+    <div class="app-bar-expand-md bg-lightBlue" data-role="appbar">
+        <a><img src="~/Content/images/pin.png" /></a>
+        <ul class="app-bar-menu ml-auto">
+            <li>
+                <a class="fg-yellow-hover bg-darkBlue-hover no-hover">首页</a>
+            </li>
+            <li>
+                <a class="dropdown-toggle fg-yellow-hover bg-lightBlue-focus">信息</a>
+                <ul class="d-menu " data-role="dropdown">
+                    <li class="bg-yellow-hover"><a >挂拍公告</a></li>
+                    <li class="divider bg-lightgray"></li>
+                    <li class="bg-yellow-hover"><a>工业用地专区</a></li>
+                    <li class="divider bg-lightgray"></li>
+                    <li class="bg-yellow-hover"><a>热点聚焦</a></li>
+                    <li class="divider bg-lightgray"></li>
+                    <li class="bg-yellow-hover"><a>地产新闻</a></li>
+                    <li class="divider bg-lightgray"></li>
+                    <li class="bg-yellow-hover"><a>房产新闻</a></li>
+                    <li class="divider bg-lightgray"></li>
+                    <li class="bg-yellow-hover"><a>业界观点</a></li>
+                    <li class="divider bg-lightgray"></li>
+                    <li class="bg-yellow-hover"><a>政策法规</a></li>
+                    <li class="divider bg-lightgray"></li>
+                    <li class="bg-yellow-hover"><a>地产金融</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
     </div>
-    <ul class="app-bar-menu">
-        <li>
-            <a>首页</a>
-        </li>
-        <li><a></a></li>
-    </ul>
 
-        
-        @RenderBody()
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @RenderBody()
+
+
 </body>
 </html>
